@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask Pertama</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="kotak">
+        <h2>Form Sederhana</h2>
+
+        <form method="POST">
+            <input type="text" name="nama" placeholder="Masukkan nama kamu" required>
+            <button type="submit">Kirim</button>
+        </form>
+
+        <p class="hasil">{{ pesan }}</p>
+    </div>
+</body>
+</html>
